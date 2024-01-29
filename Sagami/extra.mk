@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 XperiaLabs Project
+# Copyright (C) 2024 XperiaLabs Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -37,7 +37,6 @@ endif
 ifeq ($(TARGET_SHIPS_SONY_CAMERA),true)
     $(call inherit-product, vendor/sony/extra/Sagami/camera/camera.mk)
 endif
-
 
 # Sony Apps
 ifeq ($(TARGET_SHIPS_SONY_APPS),true)

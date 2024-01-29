@@ -1,4 +1,4 @@
-// Copyright (C) 2023 The LineageOS Project
+// Copyright (C) 2024 XperiaLabs Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -16,6 +16,20 @@ soong_namespace {
 }
 
 android_app_import {
+	name: "PhotoPro-New",
+	owner: "sony",
+	apk: "PhotoPro-New/PhotoPro-New.apk",
+	presigned: true,
+	overrides: ["Aperture"],
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	preprocessed: true,
+	product_specific: true,
+}
+
+android_app_import {
 	name: "PhotoPro",
 	owner: "sony",
 	apk: "PhotoPro/PhotoPro.apk",
@@ -25,6 +39,7 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+	preprocessed: true,
 	product_specific: true,
 }
 
@@ -37,6 +52,7 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+	preprocessed: true,
 	product_specific: true,
 }
 
@@ -49,6 +65,7 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+	preprocessed: true,
 	product_specific: true,
 }
 
@@ -61,6 +78,7 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+	preprocessed: true,
 	product_specific: true,
 }
 
@@ -73,6 +91,7 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+	preprocessed: true,
 	product_specific: true,
 }
 
@@ -85,6 +104,7 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+	preprocessed: true,
 	product_specific: true,
 }
 
@@ -97,6 +117,8 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+	skip_preprocessed_apk_checks: true,
+	preprocessed: true,
 	product_specific: true,
 }
 
@@ -109,6 +131,8 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+	skip_preprocessed_apk_checks: true,
+	preprocessed: true,
 	product_specific: true,
 }
 
@@ -121,6 +145,7 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+	preprocessed: true,
 	product_specific: true,
 }
 
@@ -133,5 +158,7 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+	skip_preprocessed_apk_checks: true,
+	preprocessed: true,
 	product_specific: true,
 }

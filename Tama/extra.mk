@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 XperiaLabs Project
+# Copyright (C) 2024 XperiaLabs Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -38,10 +38,9 @@ ifeq ($(TARGET_SHIPS_APERTURE_CAMERA),true)
     $(call inherit-product, vendor/sony/extra/Tama/camera/camera.mk)
 endif
 
-
-# Sony Apps
+# Sony (Common) Apps
 ifeq ($(TARGET_SHIPS_SONY_APPS),true)
-    $(call inherit-product, vendor/sony/extra/Tama/apps/apps.mk)
+    $(call inherit-product, vendor/sony/extra/Common/apps/apps.mk)
 endif
 
 # Sound Enhancements

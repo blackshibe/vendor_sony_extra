@@ -1,4 +1,4 @@
-// Copyright (C) 2023 XperiaLabs Project
+// Copyright (C) 2024 XperiaLabs Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -16,56 +16,6 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "MusicPro",
-	owner: "sony",
-	apk: "MusicPro/MusicPro.apk",
-	presigned: true,
-        overrides: ["Recorder, RecorderPrebuilt"],
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "SemcMusic",
-	owner: "sony",
-	apk: "SonyMusic/SonyMusic.apk",
-	presigned: true,
-        overrides: ["Eleven"],
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "SomcColorGamut",
-	owner: "sony",
-	apk: "ColorGamut/ColorGamut.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "SomcMediaExtensionProvider",
-	owner: "sony",
-	apk: "MediaExtensionProvider/MediaExtensionProvider.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
 	name: "ExternalMonitor",
 	owner: "sony",
 	apk: "ExternalMonitor/ExternalMonitor.apk",
@@ -74,29 +24,6 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "UsbExtOutAudio",
-	owner: "sony",
-	apk: "UsbExtOutAudio/UsbExtOutAudio.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "VideoCreator",
-	owner: "sony",
-	apk: "VideoCreator/VideoCreator.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
+	preprocessed: true,
 	product_specific: true,
 }

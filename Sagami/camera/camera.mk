@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 XperiaLabs Project
+# Copyright (C) 2024 XperiaLabs Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,9 +18,18 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/extra/Sagami/camera
 
+# Photo Pro (pdx234 | 1 V)
+ifeq ($(TARGET_SHIPS_SONY_CAMERA),true)
+PRODUCT_PACKAGES += PhotoPro-New
+endif
+
+# Photo Pro (pdx223 | 1 IV)
+ifeq ($(TARGET_SHIPS_SONY_CAMERA_OLD),true)
+PRODUCT_PACKAGES += PhotoPro
+endif
+
 # Camera
 PRODUCT_PACKAGES += \
-    PhotoPro \
     CinemaPro \
     VideoPro \
     CameraCommon \
