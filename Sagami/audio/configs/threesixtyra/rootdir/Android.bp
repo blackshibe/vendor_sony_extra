@@ -1,0 +1,10 @@
+//
+// Copyright (C) 2024 XperiaLabs Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+sh_binary {
+    name: "init.threesixty-ra.sh",
+    src: "init.threesixty-ra.sh",
+    vendor: true,
+}
