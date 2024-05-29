@@ -55,6 +55,6 @@ ifeq ($(TARGET_SUPPORTS_GAME_CONTROLLERS),true)
 endif
 
 # Xperia Stream
-ifeq ($(TARGET_SUPPORTS_GAME_CONTROLLERS),true)
+ifeq ($(TARGET_SUPPORTS_XPERIA_STREAM),true)
     $(call inherit-product, vendor/sony/extra/Common/stream/stream.mk)
 endif

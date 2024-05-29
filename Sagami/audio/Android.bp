@@ -26,7 +26,6 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-	preprocessed: true,
 	system_ext_specific: true,
 }
 
@@ -40,7 +39,6 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-	preprocessed: true,
 	system_ext_specific: true,
 }
 
@@ -64,7 +62,6 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-	preprocessed: true,
 	system_ext_specific: true,
 }
 

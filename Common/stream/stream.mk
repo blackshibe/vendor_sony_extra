@@ -16,10 +16,10 @@
 
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/sony/extra/Sagami/stream
+    vendor/sony/extra/Common/stream
 
 # Local Path
-LOCAL_STREAM := vendor/sony/extra/Sagami/stream
+LOCAL_STREAM := vendor/sony/extra/Common/stream
 
 # Permissions
 PRODUCT_COPY_FILES += \

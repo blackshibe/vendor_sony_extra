@@ -16,7 +16,7 @@
 
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_AUDIO)
+    vendor/sony/extra/Sagami/audio
 
 # Local Path
 LOCAL_AUDIO := vendor/sony/extra/Sagami/audio
@@ -40,7 +40,9 @@ PRODUCT_COPY_FILES += \
 # 360RA Clean Flash Fix (HACK)
 PRODUCT_COPY_FILES += $(LOCAL_AUDIO)/configs/threesixtyra/360radummy:$(TARGET_COPY_OUT_DATA)/360radummy
 
-PRODUCT_PACKAGES += init.threesixty-ra.sh
+PRODUCT_PACKAGES += \
+    init.threesixtyra.sh \
+    init.threesixtyra.rc
 
 # Blobs
 PRODUCT_COPY_FILES += \
@@ -136,13 +138,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 PRODUCT_ODM_PROPERTIES += \
     vendor.sony_spatializer.suppress.dolby=true
-
-# Codec2 Packages
-PRODUCT_PACKAGES += \
-    android.hardware.media.c2@1.2.vendor \
-    libcodec2_hidl@1.2.vendor \
-    libsfplugin_ccodec_utils.vendor \
-    libcodec2_soft_common.vendor
 
 # Packages
 PRODUCT_PACKAGES += \
