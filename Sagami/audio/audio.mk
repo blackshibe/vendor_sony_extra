@@ -42,6 +42,7 @@ AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 # Copy Sound Enhancement Config(s)
 PRODUCT_COPY_FILES += \
     $(LOCAL_AUDIO)/proprietary/vendor/etc/alc.speaker.bin:$(TARGET_COPY_OUT_VENDOR)/etc/alc.speaker.bin \
+    $(LOCAL_AUDIO)/proprietary/vendor/etc/XTC_speaker_coef.hki:$(TARGET_COPY_OUT_VENDOR)/etc/XTC_speaker_coef.hki \
     $(LOCAL_AUDIO)/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
 
 # Blobs

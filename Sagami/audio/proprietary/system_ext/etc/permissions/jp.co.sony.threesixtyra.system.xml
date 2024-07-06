@@ -8,5 +8,6 @@
         <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
         <permission name="android.permission.MODIFY_DEFAULT_AUDIO_EFFECTS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
     </privapp-permissions>
 </permissions>
