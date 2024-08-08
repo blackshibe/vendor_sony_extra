@@ -27,7 +27,14 @@ BOARD_ODM_SEPOLICY_DIRS += $(LOCAL_AUDIO)/sepolicy/odm
 BOARD_PRODUCT_SEPOLICY_DIRS += $(LOCAL_AUDIO)/sepolicy/product
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(LOCAL_AUDIO)/proprietary/vendor/etc/vintf/framework_compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(LOCAL_AUDIO)/proprietary/vendor/etc/vintf/dms/dolby_framework_matrix.xml \
+    $(LOCAL_AUDIO)/proprietary/vendor/etc/vintf/threesixty/threesixty_framework_matrix.xml
+
+DEVICE_MANIFEST_FILE += \
+    $(LOCAL_AUDIO)/proprietary/vendor/etc/vintf/dms/vendor.dolby.media.c2.xml \
+    $(LOCAL_AUDIO)/proprietary/vendor/etc/vintf/dms/vendor.dolby.hardware.dms.xml \
+    $(LOCAL_AUDIO)/proprietary/vendor/etc/vintf/threesixty/vendor.threesixty_ra.codec2.xml
 
 # Dolby DAP
 AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
