@@ -19,12 +19,12 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/extra/Sagami/camera
 
 # Photo Pro (pdx234 | 1 V)
-ifeq ($(TARGET_SHIPS_SONY_CAMERA),true)
+ifeq ($(TARGET_SHIPS_PHOTO_PRO),true)
 PRODUCT_PACKAGES += PhotoPro-New
 endif
 
 # Photo Pro (pdx223 | 1 IV)
-ifeq ($(TARGET_SHIPS_SONY_CAMERA_OLD),true)
+ifeq ($(TARGET_SHIPS_PHOTO_PRO_LEGACY),true)
 PRODUCT_PACKAGES += PhotoPro
 endif
 
